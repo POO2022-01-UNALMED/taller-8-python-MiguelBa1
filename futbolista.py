@@ -36,7 +36,3 @@ class Futbolista(Persona, Deportista):
 
     def setPiernaHabil(self, _piernaHabil) :
         self._piernaHabil = _piernaHabil
-
-futbolista = Futbolista("Juan Pablo", 30, "1,80", "M", 12, 400, 1, "Derecha")
-print(isinstance(futbolista, Deportista) and isinstance(futbolista, Persona))
-
