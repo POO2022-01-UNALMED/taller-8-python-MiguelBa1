@@ -11,6 +11,9 @@ class Futbolista(Persona, Deportista):
         self._piernaHabil = piernaHabil
         Futbolista.listaFutbolistas.append(self)
 
+    def __str__(self):
+        return "Mi nombre es "+str(self._nombre)+" soy profesional en el deporte "+str(self._deporte)+" Tengo "+str(self._edad )+" años de edad y llevo "+str(self._añosPracticando) +" años en el deporte"   
+
     @staticmethod
     def  getListaFutbolistas() :
         return Futbolista.listaFutbolistas
